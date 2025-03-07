@@ -27,7 +27,6 @@ int main() {
     /*
         Key Points:
         - Curly braces `{}` are optional if there is only one statement inside if, else if, or else.
-        - A single character is enclosed in single quotes ' ', while strings use double quotes " ".
         - The if condition is checked first; if it's false, else if is checked, and finally, else executes if no conditions are met.
     */
     
@@ -44,7 +43,6 @@ int main() {
     /*
         Key Points:
         - The syntax of the ternary operator:  condition ? expression_if_true : expression_if_false;
-        - It is useful for short and simple if-else conditions.
         - A character can be directly compared to its ASCII value in if-else statements.
     */
     
@@ -56,10 +54,3 @@ int main() {
     
     return 0;
 }
-
-/*
-    Conclusion:
-    - Use if-else for complex conditions.
-    - Use the ternary operator (? :) for simple one-line conditions.
-    - Remember that characters can be compared using their ASCII values.
-*/
