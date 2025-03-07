@@ -116,3 +116,15 @@ Step 6: `main()` finishes, stack is empty.
 - Returning from a function **pops the stack frame**.
 - Stack memory is **limited**, too many recursive calls can cause **Stack Overflow**.
 */
+
+
+
+// QUESTIONS
+/*
+   CHECK IF THE NUMBER IS PRIME OR NOT
+   PRINT THE FIBONACCI 
+   SWITCH STATEMENT
+   PRINT ALL PRIME NUMBERS FROM ONE TO N
+   CALCULATE THE SUM OF DIGITS OF A NUMBER
+   CALCULATE nCr for  n and r
+*/
