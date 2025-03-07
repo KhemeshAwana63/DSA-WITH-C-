@@ -4,6 +4,7 @@
 // Other systems: Octal (Base 8), Hexadecimal (Base 16)
 
 // ========== DECIMAL TO BINARY CONVERSION ==========
+//10 → (10%2=0)×1 + (5%2=1)×10 + (2%2=0)×100 + (1%2=1)×1000 = 1010 (Binary).
 #include <iostream>
 using namespace std;
 
