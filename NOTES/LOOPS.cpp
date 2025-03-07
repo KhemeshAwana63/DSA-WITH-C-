@@ -23,14 +23,7 @@ int main() {
     for (int i = 1; i <= 5; i++) {
         cout << "Iteration: " << i << endl;
     }
-    
-    /*
-        Key Points:
-        - The loop runs as long as the condition is true.
-        - Initialization happens only once before the loop starts.
-        - The update statement executes after every iteration.
-    */
-    
+
     // 2. While Loop
     // Used when the number of iterations is unknown and depends on a condition.
     // Syntax: while(condition){ block of code }
@@ -44,7 +37,6 @@ int main() {
     
     /*
         Key Points:
-        - The while loop runs as long as the condition is true.
         - If the condition is false at the beginning, the loop will not execute at all.
     */
     
@@ -59,12 +51,7 @@ int main() {
         k++;
     } while (k <= 5);
     
-    /*
-        Key Points:
-        - The loop body executes first before checking the condition.
-        - At least one iteration is guaranteed.
-    */
-    
+ 
     // 4. Nested Loops
     // A loop inside another loop (useful for working with matrices, patterns, etc.).
     
@@ -78,7 +65,6 @@ int main() {
     
     /*
         Additional Information:
-        - Loops can be controlled using break and continue.
         - 'break' exits the loop immediately.
         - 'continue' skips the current iteration and moves to the next.
     */
@@ -99,10 +85,3 @@ int main() {
     return 0;
 }
 
-/*
-    Conclusion:
-    - Use 'for' loops when the number of iterations is known.
-    - Use 'while' loops when the number of iterations depends on a condition.
-    - Use 'do-while' loops when at least one execution is required.
-    - 'break' and 'continue' help control loop flow.
-*/
