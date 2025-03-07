@@ -1,67 +1,71 @@
-// MATH -> DECIMAL NUMBERS -> BASE 10 NUMBERS 
-//COMPUTER -> BINARY NUMBERS -> BASE 2 NUMBERS
+// ================== NUMBER SYSTEMS ==================
+// Decimal (Base 10) → Used in math (0-9)
+// Binary  (Base 2)  → Used in computers (0,1)
+// Other systems: Octal (Base 8), Hexadecimal (Base 16)
 
-"there are other number systems too that have
-differente bases for example octadecimal , hexadecimal etc"
-
-//CONVERTING A DICIMAL NUMBER INTO A BINARY NUMBER
+// ========== DECIMAL TO BINARY CONVERSION ==========
 #include <iostream>
 using namespace std;
 
-int main(){
-    int num;
-    cout << "put in the number here" << endl;
-    cin >> num;
-    int ans = 0;
-    int pow = 1;
-    while (num > 0){
-        int rem = num%2;
-        num = num/2;
-        ans += rem*pow;
+int decimalToBinary(int num) {
+    int ans = 0, pow = 1;
+    while (num > 0) {
+        int rem = num % 2;
+        num /= 2;
+        ans += rem * pow;
         pow *= 10;
     }
-    cout << ans << endl;
-    return 0;
+    return ans;
 }
 
-"As we repeatedly divide the number by 2, the remainder at each 
-step represents a binary digit. Each remainder is placed at an 
-increasing power of 10, forming the final binary number."
-
-//BINARY TO DICIMAL CONVERSION
-int main(){
+int main() {
     int num;
-    cout << "put in the number here" << endl;
+    cout << "Enter decimal number: ";
     cin >> num;
-    int ans = 0;
-    int pow = 1;
-    while (num > 0){
-        int rem = num%2;
-        ans += rem*pow;
-        pow *= 2;
-        num = num/10;
-    }
-    cout << ans << endl;
+    cout << "Binary: " << decimalToBinary(num) << endl;
     return 0;
 }
-"As we repeatedly divide the number by 2, the remainder
- at each step represents a binary digit. Each remainder
-  is placed at an increasing power of 10, forming the 
-  final binary number."
 
-"0 -> 00    1 -> 01    2 -> 10   3 -> 11    4 -> 100   5 -> 101    6 -> 110
- 7 -> 111   8 -> 1000   9 -> 1001    10 -> 1010"
- //trick for converting a decimal into a binary ? in the notes
- //note a odd decimal always has 1 at the end because to add 1 by 2 ki power zero
- 
+// ========== BINARY TO DECIMAL CONVERSION ==========
+/*
+Binary digits represent powers of 2.
+Example: 1011 → (1×2³) + (0×2²) + (1×2¹) + (1×2⁰) = 11
+*/
 
-//ADDITION OF BINARY NUMBERS
-"Binary addition follows the same rules as 
-decimal addition but is limited to 0 and 1.
-Each bit is added from right to left, considering
-a carry. If the sum of two bits is 2 or more, a 
-carry is generated for the next higher bit. The
-process continues until all bits and any remaining carry are processed."
+int binaryToDecimal(int num) {
+    int ans = 0, pow = 1;
+    while (num > 0) {
+        int rem = num % 10;
+        ans += rem * pow;
+        pow *= 2;
+        num /= 10;
+    }
+    return ans;
+}
+
+int main() {
+    int num;
+    cout << "Enter binary number: ";
+    cin >> num;
+    cout << "Decimal: " << binaryToDecimal(num) << endl;
+    return 0;
+}
+
+// ========== BINARY ADDITION ==========
+/*
+Rules:
+0 + 0 = 0
+0 + 1 = 1
+1 + 0 = 1
+1 + 1 = 10 (carry 1)
+Example: 
+  101
++  11
+------
+ 1000
+*/
+
+
 // CODE TO ADD TWO BINARY NUMBERS
 
 
