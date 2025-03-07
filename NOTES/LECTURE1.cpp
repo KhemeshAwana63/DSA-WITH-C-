@@ -28,10 +28,10 @@ int main() {
     cout << 5 / 2 << endl;       // Int / Int = Int (2)
     cout << 5 / (float)2 << endl; // Int / Float = Float (2.5)
     
-    cout << (3 > 6) << endl;  // False -> 0
+    cout << (3 > 6) << endl;  // False -> 0  AND for True -> 1
     cout << !(3 < 6) << endl; // Logical NOT
-    cout << (3 < 6) && (4 > 3) ; // Logical AND
-    cout << (3 < 8) || (3 > 6) ; // Logical OR
+    cout << (3 < 6) && (4 > 3) ; // Logical AND (APESSAND)
+    cout << (3 < 8) || (3 > 6) ; // Logical OR (PIPE OPERATOR)
 
     return 0;
 }
