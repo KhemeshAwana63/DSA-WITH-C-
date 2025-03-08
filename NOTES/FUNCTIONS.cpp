@@ -117,7 +117,11 @@ Step 6: `main()` finishes, stack is empty.
 - Stack memory is **limited**, too many recursive calls can cause **Stack Overflow**.
 */
 
-
+/* PASS BY VALUE
+      copy of the argument is passed in the function with a differente address 
+      provided to that copy then the original address and once the functions completes 
+      the tasks that copy is removed from the system
+*/
 
 // QUESTIONS
 /*

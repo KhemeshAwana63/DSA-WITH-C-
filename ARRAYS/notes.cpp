@@ -58,5 +58,18 @@ NOTES:
 */
 
 
-//LINEAR SEARCH
-//REVERSE AN ARRAY
+//LINEAR SEARCH -> this is just loop for each indexing 
+//REVERSE AN ARRAY-> two pinters approach
+int main(){
+    int marks[] = {1, 3, 5, 7, 9};
+    int size = 5;
+    int start = 0;
+    int end = size -1;
+    while (start < end){
+        swap(marks[start],marks[end]);
+        start++;
+        end--;
+    }
+    cout << marks[0] <<endl;
+    return 0;
+}
